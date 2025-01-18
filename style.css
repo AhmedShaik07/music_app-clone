@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap');
+
+body{
+    background-color:chartreuse;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: "Butterfly Kids", serif;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 55px;
+    color: wheat ;
+    align-items: center;
+    background: #000;
+}
+
+nav ul li{
+    padding: 0 20px;
+}
+
+.brand img{
+    width: 55px;
+    padding: 0 10px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+.container{
+    min-height: 65vh;
+    background-color: black;
+    color: antiquewhite;
+    margin: 25px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 30px;
+    font-family: "Butterfly Kids", serif;
+    display: flex;
+    background-image: url('./images/bg.webp');
+    background-attachment: fixed;
+    
+}
+
+#progressBar{
+    width: 50vw;
+    cursor: pointer;
+}
+ 
+.bottom{
+    position: sticky;
+    background-color: black;
+    height: 95px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+div link{
+    color: white;
+}
+
+.icons{
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.icons i{
+    cursor: pointer;
+
+}
+
+.songItem{
+    font-family:'Times New Roman', Times, serif;
+    font-style: dark;
+    display: flex;
+    margin: 12px 0;
+    background-color: black;
+    color: white;
+    justify-content: space-between; 
+    align-items: center;
+    cursor: pointer;
+
+     
+}
+
+.songItemContainer{
+    align-items: center;
+    margin-top: 70px;
+}
+
+.songItem img{
+    width: 45px;
+    margin: 0 25px;
+}
+
+.timeStamp{
+    margin: 0 25px;
+}
+
+.songInfo{
+   position: absolute;
+   left: 10vw;
+   font-family: "Butterfly Kids", serif;
+   font-size: x-large;
+}
+
+.songInfo img{
+   opacity: 0;
+   transition: opacity 0.5s ease-in;
+}

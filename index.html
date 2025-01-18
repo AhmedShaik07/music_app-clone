@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    </head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="images/logo.jpeg" alt="Spotify">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact us</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        
+        <div class="playlist">
+            <h1>Feel Good songs</h1>
+            <div class="songItemContainer">
+            <div class="songItem">
+                <img src="images/cover1.jpeg" alt="1">
+                <span class="songName">Jab tak</span>
+                <span class="songList"><span class="timeStamp">04:36 <i id='0' class="songItemPlay material-symbols-outlined">play_circle</i></span></span>
+                
+            </div>
+            <div class="songItem">
+                <img src="images/cover2.jpeg" alt="2">
+                <span class="songName">Vikram</span>
+                <span class="songList"><span class="timeStamp">05:34 <i id='1' class="songItemPlay material-symbols-outlined">play_circle</i></span></span>
+                
+            </div>
+            <div class="songItem">
+                <img src="images/cover3.jpeg" alt="3">
+                <span class="songName">Hua Main</span>
+                <span class="songList"><span class="timeStamp">04:56 <i id='2' class="songItemPlay material-symbols-outlined">play_circle</i></span></span>
+                
+            </div>
+            <div class="songItem">
+                <img src="images/cover4.jpeg" alt="4">
+                <span class="songName">Tum Hi Ho</span>
+                <span class="songList"><span class="timeStamp">05:12 <i id='3' class="songItemPlay material-symbols-outlined">play_circle</i></span></span>
+                
+            </div>
+            <div class="songItem">
+                <img src="images/cover5.jpeg" alt="5">
+                <span class="songName">Agar Tum Saath Ho</span>
+                <span class="songList"><span class="timeStamp">03:59 <i id='4' class="songItemPlay material-symbols-outlined">play_circle</i></span></span>
+                
+            </div>
+            <div class="songItem">
+                <img src="images/cover6.jpeg" alt="6">
+                <span class="songName">Chaldiye</span>
+                <span class="songList"><span class="timeStamp">04:48 <i id='5' class="songItemPlay material-symbols-outlined">play_circle</i></span></span>
+                
+            </div>
+            <div class="songItem">
+                <img src="images/cover7.jpeg" alt="7">
+                <span class="songName">Mawa Enthaina</span>
+                <span class="songList"><span class="timeStamp">05:32 <i id='6' class="songItemPlay material-symbols-outlined">play_circle</i></span></span>
+                
+            </div>
+            </div>
+        </div>
+        <div class="songs"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="progressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <span class="material-symbols-outlined" id="previous">
+                skip_previous
+                </span>
+            <span class="material-symbols-outlined" id="masterPlay">
+                play_circle
+                </span>
+            <span class="material-symbols-outlined" id="next">
+                skip_next
+                </span>
+        </div>
+        <div class="songInfo">
+            <img src="images/playing.gif" width="72px" alt="" id="gif"><span id="masterSongName">Jab Tak</span>
+        </div>        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
